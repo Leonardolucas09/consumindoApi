@@ -1,9 +1,13 @@
+import { useState } from "react";
 import Rotas from "./rotas/Rotas";
 
 function App() {
+
+  const [news, setNews] = useState([])
+
   return (
     <>
-    <Rotas/>
+    <Rotas news={news} setNews={setNews}/>
     </>
   );
 }
